@@ -10,11 +10,15 @@
 
 <main>
 
+<!-- BOTÓN SUBIR CAPÍTULOS (SOLO AUTOR) -->
+<button id="subirCapituloBtn" style="display:none">
+    ⬆️ Subir capítulos
+</button>
+
 <!-- USUARIO -->
 <div id="usuarioBox">
     <span id="usuarioTexto"></span>
     <button id="logoutBtn">Cerrar sesión</button>
-    <a href="autor.html">subir</a>
 </div>
 
 <div id="loginBox">
@@ -44,8 +48,10 @@
     <h3>📝 Reseña</h3>
     <textarea id="textoReseña"></textarea>
     <div class="estrellas">
-        <span data-star="1">⭐</span><span data-star="2">⭐</span>
-        <span data-star="3">⭐</span><span data-star="4">⭐</span>
+        <span data-star="1">⭐</span>
+        <span data-star="2">⭐</span>
+        <span data-star="3">⭐</span>
+        <span data-star="4">⭐</span>
         <span data-star="5">⭐</span>
     </div>
     <button id="guardarReseña">Guardar reseña</button>
@@ -70,4 +76,4 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 </body>
-</html>
+    </html>
