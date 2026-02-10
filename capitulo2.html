@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Novela – Capítulo 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<main>
+
+<div id="usuarioBox">
+    <span id="usuarioTexto"></span>
+    <button id="logoutBtn">Cerrar sesión</button>
+</div>
+
+<div id="loginBox">
+    <h3>👤 Iniciar sesión</h3>
+    <input type="text" id="nombreUsuario">
+    <button id="loginBtn">Entrar</button>
+</div>
+
+<header>
+    <button id="temaBtn">🌙 Tema</button>
+
+    <select id="capitulos">
+        <option value="">▶ Continuar leyendo</option>
+        <option value="index.html">Capítulo 1</option>
+        <option value="capitulo2.html">Capítulo 2</option>
+    </select>
+
+    <h1>Capítulo 2</h1>
+</header>
+
+<div id="novela">
+    <p>Aquí va el contenido del capítulo 2.</p>
+</div>
+
+<div id="reseña">
+    <h3>📝 Reseña</h3>
+    <textarea id="textoReseña"></textarea>
+    <div class="estrellas">
+        <span data-star="1">⭐</span><span data-star="2">⭐</span>
+        <span data-star="3">⭐</span><span data-star="4">⭐</span>
+        <span data-star="5">⭐</span>
+    </div>
+    <button id="guardarReseña">Guardar reseña</button>
+</div>
+
+<div id="comentarios">
+    <h3>💬 Comentarios</h3>
+    <div id="listaComentarios"></div>
+    <textarea id="nuevoComentario"></textarea>
+    <button id="publicarComentario">Publicar</button>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>

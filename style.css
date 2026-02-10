@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    font-family: Arial;
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+body.claro{
+    background:#f2f2f2;
+    color:#111;
+}
+
+main{
+    max-width:900px;
+    width:100%;
+    padding:15px;
+}
+
+#novela, #reseña, #comentarios{
+    background:#222;
+    padding:15px;
+    border-radius:15px;
+    margin:15px 0;
+}
+
+body.claro #novela,
+body.claro #reseña,
+body.claro #comentarios{
+    background:#eee;
+}
+
+textarea{
+    width:100%;
+    height:80px;
+    border-radius:10px;
+    padding:10px;
+}
+
+textarea:disabled{
+    background:#555;
+    color:#ccc;
+}
+
+.estrellas span{
+    font-size:24px;
+    cursor:pointer;
+    opacity:0.4;
+}
+
+.estrellas span.activa{
+    opacity:1;
+}
+
+button, select{
+    padding:8px 12px;
+    border-radius:12px;
+    border:none;
+    margin:5px 0;
+}
+
+.comentario{
+    background:#333;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:8px;
+}
+
+body.claro .comentario{
+    background:#ddd;
+}
+
+#usuarioBox{
+    display:none;
+    justify-content:space-between;
+    margin-bottom:10px;
+}

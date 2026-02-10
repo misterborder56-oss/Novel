@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Autor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+<h1>✍️ Panel de Autor</h1>
+
+<!-- REGISTRO AUTOR -->
+<div id="registroAutor">
+    <h3>Registro de autor</h3>
+    <input type="text" id="regUsuario" placeholder="Usuario">
+    <input type="password" id="regClave" placeholder="Contraseña">
+    <button id="registrarAutor">Registrar</button>
+</div>
+
+<!-- LOGIN AUTOR -->
+<div id="loginAutor" style="display:none">
+    <h3>Iniciar sesión</h3>
+    <input type="text" id="loginUsuario" placeholder="Usuario">
+    <input type="password" id="loginClave" placeholder="Contraseña">
+    <button id="entrarAutor">Entrar</button>
+</div>
+
+<!-- PANEL -->
+<div id="panelAutor" style="display:none">
+
+    <button id="logoutAutor">Cerrar sesión</button>
+
+    <h3>📘 Crear / Editar capítulo</h3>
+
+    <input type="text" id="tituloCap" placeholder="Título del capítulo">
+
+    <textarea id="contenidoCap" placeholder="Contenido del capítulo"></textarea>
+
+    <button id="guardarCap">Guardar capítulo</button>
+
+    <h3>📚 Capítulos</h3>
+    <ul id="listaCaps"></ul>
+
+</div>
+
+</main>
+
+<script src="autor.js"></script>
+</body>
+</html>
